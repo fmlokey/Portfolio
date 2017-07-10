@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html">
+<title></title>
+
+<script>
+#stickynav {
+		display: block;
+		height: 70px;
+		width: 100%;
+		z-index: 9999;
+		position: fixed;
+		display: inline
+		background: black;
+		color: white;
+		text-align: center;
+		}
+	#stickynav  a {
+		display: block;
+		float: center;
+		margin-right: 8px;
+		font-size: 1.2em;
+		font-weight: bold;
+		padding: 5px 7px;
+		background: black;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+	#stickynav a:hover {
+		text-decoration: none;
+		background: #d8f0d0;
+	}
+</script>	
+</head>
+<body>
+	<div id="w">
+		<div id="content">
+			<nav id="stickynav">
+					<a href="#topbar">Homepage</a>
+					<a href="#about">About</a>
+					<a href="#photos">Photos</a>
+					<a href="#contact">Contact</a>
+			</nav
+			<h1>
+			"Single-page sliding Effect" 
+			</h1>
+			<p>Click on the navigation items for a basic sliding effect.</p>
+			<br>
+			<br>
+	<section id="topbar" class="section">
+		<h2>Home</h2>
+	
+	</section>
+	<section id="about" class="section">
+		<h2>About Us</h2>
+	
+	</section>
+		<section id="photos" class="section">
+		<h2>Photos</h2>
+		<h2>Data Analysis<h2>
+		<img src="DataAnalysisExample1.png" height="auto" width="auto" >
+		<img src="DataAnalysisExample4.png" height="auto" width="auto">
+	
+	</section>
+		<section id="contact" class="section">
+		<h2>Contact</h2>
+	
+	</section>
+	</div>
+	<script type='text/javascript">
+		$(function() {
+		$("#nav a").click(function(e){
+			e.preventDefault();
+			$('html,body').scrollTo(this.hash,this.hash);
+		});
+	});
+	</script>
+</body>
+</html>

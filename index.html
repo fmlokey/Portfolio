@@ -2,25 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script language="javascript">
-	// Activate Carousel
-		$("#myCarousel").carousel();
-
-	// Enable Carousel Indicators
-		$(".item").click(function(){
-		$("#myCarousel").carousel(1);
-		});
-
-	// Enable Carousel Controls
-		$(".left").click(function(){
-		$("#myCarousel").carousel("prev");
-		});
-
-	</script>
+  
 	<style>
 
 	body {
@@ -79,12 +65,18 @@
 		background-color: #4CAF50;
 	}
 
-    .carousel-inner img {
-		width: 100%; /* Set width to 100% */
+   .carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+	}
+ 
+	/*.carousel-inner img {
+		width: auto; 
 		margin: auto;
 		min-height:200px;
-	}
-
+	} */
+	
 	/* Hide the carousel text when the screen is less than 600 pixels wide */
 	@media (max-width: 600px) {
 		.carousel-caption {
@@ -147,15 +139,15 @@
 			
 	<section id="technicalWriting" class="section">
 		<h3>Technical Writing</h3>
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div id="myCarousel" class="carousel slide" >
 			<!-- Indicators -->
 				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
-					<li data-target="#myCarousel" data-slide-to="5"></li>
+					<li data-target="#myCarousel" class="item1 active"></li>
+					<li data-target="#myCarousel" class="item2"></li>
+					<li data-target="#myCarousel" class="item3"></li>
+					<li data-target="#myCarousel" class="item4"></li>
+					<li data-target="#myCarousel" class="item5"></li>
+					<li data-target="#myCarousel" class="item6"></li>
 				</ol>
 
 				<!-- Wrapper for slides -->
@@ -203,6 +195,37 @@
 	<section id="contact" class="section">
 		<div><h2>Contact</h2></div>
 	</section>
+<script language="javascript">
+	// Activate Carousel
+		$("#myCarousel").carousel();
 
+	// Enable Carousel Indicators
+		$(".item1").click(function(){
+		$("#myCarousel").carousel(0);
+		});
+		$(".item2").click(function(){
+		$("#myCarousel").carousel(1);
+		});
+		$(".item3").click(function(){
+		$("#myCarousel").carousel(2);
+		});
+		$(".item4").click(function(){
+		$("#myCarousel").carousel(3);
+		});
+		$(".item5").click(function(){
+		$("#myCarousel").carousel(4);
+		});
+		$(".item6").click(function(){
+		$("#myCarousel").carousel(5);
+		});
+
+	// Enable Carousel Controls
+		$(".left").click(function(){
+			$("#myCarousel").carousel("prev");
+		});
+		$(".right").click(function(){
+			$("#myCarousel").carousel("next");
+		});
+	</script>
 </body>
 </html>

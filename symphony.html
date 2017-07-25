@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Monarch Traveling Symphony Orchestra</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: white;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+		<li><a href="#">Outdoor Events Calendar</a></li>
+		<li><a href="#">Indoor Events Calendar</a></li>
+		<li><a href="#">School Events</a></li>
+		<li><a href="#">Meet the Musicians</a></li>
+        <li><a href="#">Donor Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+	  <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">		
+        <img src="YNP_Symphony1.jpg" alt="Image" style="height:300px;width:auto" /* picture from http://www.fresnobee.com/living/liv-columns-blogs/andrew-fiala/article98045307.html  */ >
+        <div class="carousel-caption">
+          <h3>Mountain Vistas Concert</h3>
+          <p>April 16, 2015</p>
+        </div>
+      </div>
+      <div class="item">		
+        <img src="fireworksSymphony.jpg" alt="Image" style="height:300px;width:auto" /* picture from https://www.houstonpublicmedia.org/articles/arts-culture/2015/07/03/122301/houston-symphony-live-from-miller-outdoor-theatre-on-july-4th/  */ >
+        <div class="carousel-caption">
+          <h3>National Park Concert</h3> 
+          <p>July 4, 2015</p>
+        </div>
+      </div>
+	  <div class="item">		
+        <img src="CustomHouseConcert.jpg" alt="Image" style="height:300px;width:auto" /* picture from http://www.pdastage.com/piccolo-spoleto-sunset-serenade/  */ >
+        <div class="carousel-caption">
+          <h3>Concert at Customs House</h3>
+          <p>May 21, 2015</p>
+        </div>
+      </div>
+	  <div class="item">		
+        <img src="SymphonyNWater3.jpg" alt="Image" style="height:300px;width:auto" /* picture from http://www.lajollabluebook.com/blog/la-jolla-symphony-balboa-park-collaborate-for-unique-outdoor-musical-experience/ */ >
+        <div class="carousel-caption">
+          <h3>Concert Performance on Water</h3>
+          <p>August 14, 2015</p>
+        </div>
+      </div>
+	  <div class="item">		
+        <img src="SymphonyNWater4.jpg" alt="Image" style="height:300px;width:auto" /* picture from http://www.lajollabluebook.com/blog/la-jolla-symphony-balboa-park-collaborate-for-unique-outdoor-musical-experience/ */ >
+        <div class="carousel-caption">
+          <h3>Concert Performance on Water</h3>
+          <p>August 14, 2015</p>
+        </div>
+      </div>
+     
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="container text-center">
+  <h3>Monarch Traveling Symphony Orchestra</h3><br>
+  </div>
+<div class="container">
+  <h2>Outdoor Performance Schedule</h2>
+  <p>The schedule dates for our outside performances run from April through October. 
+     Please see our year round traveling schedule for inside venues.</p>
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>City</th>
+        <th>Venue</th>
+        <th>Composer</th>
+        <th>Time</th>
+        <th>Seating Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>April 3, 2016</td>
+        <td>Houston, TX</td>
+        <td>The Cynthia Woods Mitchell Pavilion</td>
+        <td>Ludwig van Beethoven</td>
+        <td>6:00pm-9:00pm</td>
+        <td>300</td>
+      </tr>
+	   <tr>
+        <td>May 29, 2016</td>
+        <td>Houston, TX</td>
+        <td>The Greek Theatre</td>
+        <td>Johannes Brahms</td>
+        <td>3:00pm-6:00pm</td>
+        <td>230</td>
+      </t>
+	  </t>
+	   <tr>
+        <td>July 4, 2016</td>
+        <td>Washington, DC</td>
+        <td>White House Lawn</td>
+        <td>Roy Harris </td>
+        <td>7:00pm-10:00pm</td>
+        <td>250</td>
+      </t>
+	   <tr>
+        <td>September 21, 2016</td>
+        <td>Chicago, IL</td>
+        <td>Hollywood Casino Amphitheatre</td>
+        <td>Wolfgang Amadeus Mozart</td>
+        <td>6:00pm-9:30pm</td>
+        <td>3,000</td>
+      </t>
+	   <tr>
+        <td>October 23, 2016</td>
+        <td>Miami, FL</td>
+        <td>Bayfront Park Amphitheatre</td>
+        <td>Franz Joseph Haydn</td>
+        <td>7:00pm-9:30pm</td>
+        <td>600</td>
+      
+    </tbody>
+  </table>
+  </div>
+</div>  
+
+  <div class="row">
+  
+    <div class="col-sm-4">		
+      <img src="047 Symphony orchestra.jpg" class="img-responsive" style="width:100%" alt="Image" /* picture from https://www.infovisual.info/en/music/symphony-orchestra  */>
+      <p>Musical Instruments in an Orchestra</p>
+    </div>
+    <div class="col-sm-4">		
+      <img src="monarchbutterflycrop.jpg" class="img-responsive" style="width:100%" alt="Image" /* picture from http://www.nbcnews.com/science/science-news/how-one-gene-gives-monarch-butterflies-power-migrate-n215936    */>
+      <p>More about our Name</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+       <p>We are a nonprofit symphony orchestra that travels around the world performing in a variety of setting including outdoor performances.</p>
+      </div>
+      <div class="well">
+       <p>All donations to the Monarch Traveling Symphony Orchestra are tax deductible. Consider us in your will to leave a legacy for the generations after you. </p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>Monarch Traveling Symphony Orchestra, 214 Main Street, Memphis, TN 38125<br>
+  Telephone: 901-432-8475  Fax: 901-432-8476<br>
+  Email: MonarchTravelingSymphonyOrchestra@gmail.com</p>
+</footer>
+
+</body>
+</html>
+

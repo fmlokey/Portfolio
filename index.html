@@ -18,9 +18,12 @@
 	}
 
 	div {
+		margin: 0px 10px;
+	}
+	
+	.bar {
 		background-color: lightgray;
 		margin: 0px 10px;
-	
 	}
 
 	ul {
@@ -84,7 +87,36 @@
 		display: none;
 		}
 	}
+	
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
 
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+    
+	/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -60px;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+	}
+
+
+	
 	section {
 		text-align: center;
 	}
@@ -106,24 +138,24 @@
 </ul>
 <img src="name.jpg" alt="Name" height="auto"  width="100%">
 <section id="topbar" class="section">
-		<div><h2>Home</h2></div>
+		<div class="bar"><h2>Home</h2></div>
 	
 	</section>
 	
 	<section id="about" class="section">
-		<div><h2>About</h2></div>
+		<div class="bar"><h2>About</h2></div>
 	
 	</section>
 
 	<section id="skills" class="section">
-		<div><h2>Skills</h2></div>
+		<div class="bar"><h2>Skills</h2></div>
 	
 	<section id="teachTech"  class="section">
 		<h3>Teaching Technology</h3>
 	</section>
 	
 	<section id="websitecreate" class="section">
-		<div><h2>Website Creation</h2></div>
+		<div class="bar"><h2>Website Creation</h2></div>
 		<div id="webCarousel" class="carousel slide" data-interval="10000" data-ride="carousel">
 			<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -135,8 +167,9 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<a href="https://fmlokey.github.io/CarDealershipWebsite/"><img src="CarDealership.png"  alt="CarDealershipWebsite" style="height:100%" ></a>
-				
+						<div class="too;tip"><a href="https://fmlokey.github.io/CarDealershipWebsite/"><img src="CarDealership.png"  alt="CarDealershipWebsite" style="height:100%" ></a>
+							<span class="tooltiptext">Click to View Full Page</span>
+						</div>
 					</div>
 
 					<div class="item">
@@ -161,7 +194,7 @@
 	</section>
 			
 	<section id="dataAnalysis" class="section">
-		<div><h2>Data Analysis</h2></div>
+		<div class="bar"><h2>Data Analysis</h2></div>
 		<h3>Microsoft SQL Server Report Services (SSRS) / SQL Server Management Studio </h3>
 		<h4><p>As an intern at East Tennessee Children’s Hospital, I ran SQL queries and 
 		created reports using Microsoft SQL Server Report Services (SSRS). These types 
@@ -209,7 +242,7 @@
 	</section>
 			
 	<section id="technicalWriting" class="section">
-		<div><h2>Technical Writing</h2></div>
+		<div class="bar"><h2>Technical Writing</h2></div>
 		<div id="myCarousel" class="carousel slide" data-interval="10000">
 			<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -250,7 +283,7 @@
 	</section>
 	
 	<section id="contact" class="section">
-		<div><h2>Contact</h2></div>
+		<div class="bar"><h2>Contact</h2></div>
 	</section>
 <script language="javascript">
 	// Activate Carousel

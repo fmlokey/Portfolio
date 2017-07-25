@@ -123,18 +123,46 @@
 	</section>
 	
 	<section id="websitecreate" class="section">
-		<h3>Website Creation</h3>
+		<div><h2>Website Creation</h2></div>
+		<div id="webCarousel" class="carousel slide" data-interval="10000">
+			<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#webCarousel"  class="item1 active"></li>
+					<li data-target="#webCarousel" class="item2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<href="https://fmlokey.github.io/CarDealershipWebsite/" alt="CarDealershipWebsite" style="height:400px">
+					</div>
+
+					<div class="item">
+						<href="https://fmlokey.github.io/CarDealershipWebsite/TakeOurSurvey.html" alt="CarDealershipSurvey" style="height:400px">
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#webCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#webCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
 	</section>
 			
 	<section id="dataAnalysis" class="section">
-		<h3>Data Analysis</h3>
-		<h4>Microsoft SQL Server Report Services (SSRS)</h4>
-		<p>As an intern at East Tennessee Children’s Hospital, I ran SQL queries and 
+		<div><h2>Data Analysis</h2></div>
+		<h3>Microsoft SQL Server Report Services (SSRS) / SQL Server Management Studio </h3>
+		<h4><p>As an intern at East Tennessee Children’s Hospital, I ran SQL queries and 
 		created reports using Microsoft SQL Server Report Services (SSRS). These types 
 		of reports are used to visualize data to make business decisions by hospital 
 		administrators.  Business Analytics utilizes the vast amount of data stored in 
 		databases and transforms it into information.  Businesses use this information 
-		to make business decisions based on numbers instead of hunches. </p>
+		to make business decisions based on numbers instead of hunches. </p></h4>
 
 		<div id="dataCarousel" class="carousel slide" data-interval="10000">
 			<!-- Indicators -->
@@ -175,7 +203,7 @@
 	</section>
 			
 	<section id="technicalWriting" class="section">
-		<h3>Technical Writing</h3>
+		<div><h2>Technical Writing</h2></div>
 		<div id="myCarousel" class="carousel slide" data-interval="10000">
 			<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -220,6 +248,25 @@
 	</section>
 <script language="javascript">
 	// Activate Carousel
+		$("#webCarousel").carousel();
+		
+	// Enable Carousel Indicators
+		$(".item1").click(function(){
+		$("#webCarousel").carousel(0);
+		});
+		$(".item2").click(function(){
+		$("#webCarousel").carousel(1);
+		});
+
+	// Enable Carousel Controls
+		$(".left").click(function(){
+			$("#webCarousel").carousel("prev");
+		});
+		$(".right").click(function(){
+			$("#webCarousel").carousel("next");
+		});
+		
+		// Activate Carousel
 		$("#dataCarousel").carousel();
 		
 	// Enable Carousel Indicators

@@ -234,6 +234,24 @@
 	</section>
 <script language="javascript">
 	// Activate Carousel
+		$("#dataCarousel").carousel();
+		
+	// Enable Carousel Indicators
+		$(".item1").click(function(){
+		$("#dataCarousel").carousel(0);
+		});
+		$(".item2").click(function(){
+		$("#dataCarousel").carousel(1);
+		});
+
+	// Enable Carousel Controls
+		$(".left").click(function(){
+			$("#dataCarousel").carousel("prev");
+		});
+		$(".right").click(function(){
+			$("#dataCarousel").carousel("next");
+		});
+	// Activate Carousel
 		$("#myCarousel").carousel();
 		
 	// Enable Carousel Indicators

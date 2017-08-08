@@ -117,46 +117,6 @@
 	<section id="skills" class="section">
 		<div><h2>Skills</h2></div>
 	
-	<section id="teachTech"  class="section">
-		<h3>Teaching Technology</h3>
-	</section>
-	
-	<section id="websitecreate" class="section">
-		<div><h2>Website Design</h2></div>
-		<h4><p>I have created several websites as part of school projects, and personal projects.</p></h4>
-		<div id="webCarousel" class="carousel slide" data-interval="10000" data-ride="carousel">
-			<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#webCarousel"  class="item1 active"></li>
-					<li data-target="#webCarousel" class="item2"></li>
-					<li data-target="#webCarousel" class="item3"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<a href="https://fmlokey.github.io/CarDealershipWebsite/"><img src="CarDealership.png"  alt="CarDealershipWebsite" style="height:100%" ></a>
-					</div>
-
-					<div class="item">
-						<a href="https://fmlokey.github.io/CarDealershipWebsite/TakeOurSurvey.html"><img src="CarDealershipSurvey.png" alt="CarDealershipSurvey" style="height:100%"></a>
-					</div>
-					
-					<div class="item">
-						<a href="https://fmlokey.github.io/Portfolio/symphony.html"><img src="symphony.png" alt="symphony" style="height:100%"></a>
-					</div>
-				</div>
-
-				<!-- Left and right controls -->
-				<a class="left carousel-control" href="#webCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#webCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
 	</section>
 			
 	<section id="dataAnalysis" class="section">
@@ -299,34 +259,50 @@
 		
 	</section>
 	
+	<section id="websitecreate" class="section">
+		<div><h2>Website Design</h2></div>
+		<h4><p>I have created several websites as part of school projects, and personal projects.</p></h4>
+		<div id="webCarousel" class="carousel slide" data-interval="10000" data-ride="carousel">
+			<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#webCarousel"  class="item1 active"></li>
+					<li data-target="#webCarousel" class="item2"></li>
+					<li data-target="#webCarousel" class="item3"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<a href="https://fmlokey.github.io/CarDealershipWebsite/"><img src="CarDealership.png"  alt="CarDealershipWebsite" style="height:100%" ></a>
+					</div>
+
+					<div class="item">
+						<a href="https://fmlokey.github.io/CarDealershipWebsite/TakeOurSurvey.html"><img src="CarDealershipSurvey.png" alt="CarDealershipSurvey" style="height:100%"></a>
+					</div>
+					
+					<div class="item">
+						<a href="https://fmlokey.github.io/Portfolio/symphony.html"><img src="symphony.png" alt="symphony" style="height:100%"></a>
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#webCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#webCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+	</section>
 	</section>
 	
 	<section id="contact" class="section">
 		<div><h2>Contact</h2></div>
 	</section>
 <script language="javascript">
-	// Activate Carousel
-		$("#webCarousel").carousel();
-		
-	// Enable Carousel Indicators
-		$(".item1").click(function(){
-		$("#webCarousel").carousel(0);
-		});
-		$(".item2").click(function(){
-		$("#webCarousel").carousel(1);
-		});
-		$(".item2").click(function(){
-		$("#webCarousel").carousel(2);
-		});
-
-	// Enable Carousel Controls
-		$(".left").click(function(){
-			$("#webCarousel").carousel("prev");
-		});
-		$(".right").click(function(){
-			$("#webCarousel").carousel("next");
-		});
-		
+	
 		// Activate Carousel
 		$("#dataCarousel").carousel();
 		
@@ -386,6 +362,29 @@
 		$(".right").click(function(){
 			$("#myCarousel").carousel("next");
 		});
+		
+		// Activate Carousel
+		$("#webCarousel").carousel();
+		
+	// Enable Carousel Indicators
+		$(".item1").click(function(){
+		$("#webCarousel").carousel(0);
+		});
+		$(".item2").click(function(){
+		$("#webCarousel").carousel(1);
+		});
+		$(".item2").click(function(){
+		$("#webCarousel").carousel(2);
+		});
+
+	// Enable Carousel Controls
+		$(".left").click(function(){
+			$("#webCarousel").carousel("prev");
+		});
+		$(".right").click(function(){
+			$("#webCarousel").carousel("next");
+		});
+		
 	</script>
 </body>
 </html>

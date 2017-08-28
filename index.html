@@ -243,6 +243,44 @@
 	
 	<section id="programming" class="section">
 		<div><h2>Programming</h2></div>
+		<h4><p>Here are a few screen shots of some .NET/#C programs I have created. I will be adding
+		examples of other programming language examples to my portfolio. Click on the picture of the program be taken to my github account where you can download the files for 
+		that particular program.</p></h4>
+		<div id="programmingCarousel" class="carousel slide" data-interval="10000">
+			<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#programmingCarousel" class="item1 active"></li>
+					<li data-target="#programmingCarousel" class="item2"></li>
+					<li data-target="#programmingCarousel" class="item3"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<a href="https://github.com/fmlokey/.NET"><img src="InteriorPaintEstimatorPic.png" alt="Slide1" style="width:100%">
+					</div>
+
+					<div class="item">
+						<a href="https://github.com/fmlokey/.NET"><img src="CampusSpeedingTicketVisitor.png" alt="Slide2" style="width:100%">
+					</div>
+
+					<div class="item">
+						<a href="https://github.com/fmlokey/.NET"><img src="CampusSpeedingTicketSophmore.png" alt="Slide3" style="width:100%">
+					</div>
+					
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#programmingCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#programmingCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		
 	</section>
 			
 	<section id="database" class="section">
@@ -389,6 +427,27 @@
 			$("#webCarousel").carousel("next");
 		});
 		
+		// Activate Carousel
+		$("#programmingCarousel").carousel();
+		
+	// Enable Carousel Indicators
+		$(".item1").click(function(){
+		$("#programmingCarousel").carousel(0);
+		});
+		$(".item2").click(function(){
+		$("#programmingCarousel").carousel(1);
+		});
+		$(".item2").click(function(){
+		$("#programmingCarousel").carousel(2);
+		});
+
+	// Enable Carousel Controls
+		$(".left").click(function(){
+			$("#programmingCarousel").carousel("prev");
+		});
+		$(".right").click(function(){
+			$("#programmingCarousel").carousel("next");
+		});
 	</script>
 </body>
 </html>
